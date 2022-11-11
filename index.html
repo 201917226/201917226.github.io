@@ -1,45 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="UTF-8">
-  <title>华水七十周年校庆</title>
-   <style type="text/css">
-      p{text-indent: 2em;}
-      h2{color: pink;text-align: center}
-      img{margin: auto}
-  </style>
+  <title>华北水利水电大学70年校庆</title>
+   <link rel="stylesheet" type="text/css" href="kuang.css">
+  <script type="text/javascript">
+    window.onload = function(){
+  var box=this.document.getElementsByClassName("re")[0];
+  var lik=box.getElementsByTagName("li");
+  function fun(i,j){
+    lik[i].style.opacity=1;
+    lik[j].style.opacity=0;
+    lik[i+5].style.backgroundColor="#ffffff";
+    lik[j+5].style.backgroundColor="#00000000"
+  }
+  fun(0,1);
+  var i =0;
+  function auto(){
+    if(++i>=5){
+      i=0;
+      fun(0,4);
+    }
+    else fun(i,i-1);
+  }
+  timer=this.setInterval(auto,2000);
+  box.onmouseover = function () {
+    console.log('good');
+    clearInterval(timer);
+  }
+  box.onmouseout = function () {
+    timer = setInterval(auto, 2000);
+  }
+  var j =0;
+  for(;j<5;j++){
+    lik[j+5].ind=j;
+    lik[j+5].onclick=function(){
+      fun(this.ind,i)
+      i=this.ind;
+    }
+  }
+
+}
+
+</script>
 </head>
 <body>
-<div  style="background: pink;
-text-align: center">
+<div  style="background: pink;">
   <p><img alt="top" src="7d59ab912aa002d.png"> </p>
 </div>
-<h2>华北水利水电大学举行建校70周年座谈会</h2>
-<p>10月16日，黄河生态保护与文化发展论坛暨华北水利水电大学建校70周年座谈会在该校龙子湖校区举办，行业学术大咖、华北水利水电大学各地校友代表、兄弟友好院校代表等齐聚一堂，共襄嘉会，同庆华诞，共同见证华北水利水电大学开启新征程。
-</p>
-<div style="text-align: center"><img src="周年1.png"></div>
-<p>第十三届全国政协人口资源环境委员会副主任、水利部原部长鄂竟平，水利部副部长田学斌，第十三届全国政协副秘书长高波，河南省副省长武国定，黄河水利委员会主任汪安南，河南省政协副主席、郑州大学党委书记、校长刘炯天等出席大会。大会由华北水利水电大学党委书记王清义主持。
-</p>
-<p>
-  清华大学、河海大学、河南大学、郑州大学等兄弟高校，中国水利水电科学研究院、水利部河海水利委员会、河南省社会科学院、河南省自然资源厅等50余个单位送来贺信、贺礼。各地校友通过视频的形式向母校送上了祝福，并通过贺信、贺电、捐赠等多种形式对华北水利水电大学建校70周年表示祝贺。
-
-大会在庄严的国歌声中拉开序幕。
-</p>
-<div style="text-align: center"><img src="周年2.png"></div>
-<p>在鄂竟平、田学斌、武国定、汪安南等领导的共同见证下，华北水利水电大学与全国七大流域机构和全国水利领军企业签订了合作协议，构建全国水利水电创新联盟，着力助推华北水利水电大学创建“双一流”工程进程。</p>
-<div style="text-align: center"><img src="周年3.png"></div>
-<p>水利部副部长田学斌受水利部部长李国英委托，代表水利部向华北水利水电大学七十华诞表示热烈祝贺！他指出，70年来，华北水利水电大学始终把家国情怀、治水兴国作为筑校之魂，始终把潜心育人、静心教书作为立校之本，始终把立足水利、服务大局作为兴校之要，始终把崇尚学术、勇于创新作为强校之基，开创华北水利水电大学70年奋斗和发展历程，凝聚着一代又一代华水人的辛劳汗水，谱写了新中国水利水电史上浓墨重彩的壮丽篇章。他希望，华北水利水电大学以70年校庆为契机，立足中华民族伟大复兴战略全局和世界百年未有之大变局，心怀“国之大者”抢抓机遇，聚势突破，加快特色鲜明的高水平水利水电大学建设步伐，为新阶段水利高质量发展和地方经济社会发展提供有力的人才保障和智力支撑。</p>
-<p>田学斌对华北水利水电大学发展提出六点要求。一要牢记立德树人，培育一流人才。二要突出办学特色，建设一流学科。三要服务发展大局，作出一流贡献。四要坚持人才为先，建设一流师资。五要深化交流互鉴，拓展一流合作。六要强化党建引领，筑起一流保障。同时，田学斌对华水学子提出四点希望。一要志存高远，用理想滋养初心；二要勤学善思，用知识厚植底气；三要勇攀高峰，用创新不负时代；四要敢于担当，用奉献不负青春。他表示，水利部将一如既往地支持学校的改革发展，衷心祝愿华北水利水电大学在建设教育强国、人才强国的伟大征程中，谱写更加灿烂辉煌的新篇章。</p>
-<div style="text-align: center"><img src="周年4.png"></div>
-<p>武国定副省长代表河南省人民政府，向华北水利水电大学建校70周年表示热烈的祝贺。他指出，70年来，华北水利水电大学虽然校名几经更换、校址几经搬迁，但始终秉承“情系水利、自强不息”的办学精神，践行“育人为本、学以致用”的办学理念，打造了一批优势特色学科和国家一流专业，形成了一大批优秀科研成果，涌现出一大批杰出校友。他指出，当前，华北水利水电大学正站在新的历史起点上，迎来新的发展机遇。河南省人民政府将继续给予学校全方位支持，为学校创新发展创造良好环境。</p>
-<div style="text-align: center"><img src="周年5.png"></div>
-<p>华北水利水电大学党委书记王清义代表学校向出席大会的各位领导、嘉宾和校友表示热烈的欢迎。王清义说，70周年校庆是学校发展史上的重要里程碑。他表示，让我们接过前辈们手中的接力棒，以水利水电创新联盟为抓手，全方位融入黄河国家战略、南水北调后续工程高质量发展战略和新时代水利高质量发展大局，以重于泰山的使命感、只争朝夕的紧迫感、逆水行舟的危机感，更加突出行业高校的特点，努力向“双一流”冲刺，把论文书写在新时代水利事业发展的广阔大地上，让水利人才的摇篮这一办学特色更加彰显，努力创造无愧于时代的光辉办学业绩。</p>
-<p>华北水利水电大学校长刘文锴以《牢记初心 勇担使命 不懈奋斗 再创辉煌》为题作学校发展情况报告。刘文锴表示，回望70年办学历程，多次搬迁、数易校址，历经磨难、矢志不渝，华北水利水电大学走过了一路风雨、一路高歌的光辉岁月。这波澜壮阔、曲折艰辛的70年,是新中国高等教育和水利事业从初创、探索、发展到取得举世瞩目伟大成就的70年，也是学校与党和国家同呼吸、共命运，与新中国水利水电事业齐发展、偕奋进的70年。华北水利水电大学将心怀“国之大者”，不忘初心，牢记使命，倍加努力，接续奋斗，不负水利部、河南省委省政府的殷殷重托和中原人民的热切企盼，以优异的成绩谱写新时代华北水利水电大学办学兴校、治水兴国更加绚丽的新篇章。</p>
-<p>大会现场，河南省政协副主席、郑州大学党委书记、校长刘炯天，河海大学校长徐辉分别致辞，与会嘉宾共同观看国外友好大学代表、英国提赛德大学副校长大卫·贝尔的致辞视频，祝愿华北水利水电大学在未来取得更为辉煌的成就。全国工程勘察设计大师、78级工程地质与水文地质专业毕业生高玉生，华北水利水电大学教师代表聂相田、学生代表雷耀辉分别发言。</p>
-<div style="text-align: center"><img src="周年6.png"></div>
-<p>华北水利水电大学校友会名誉会长、北京校友会会长陈自强为华水自强教育基金获奖代表颁奖。华水自强教育基金是在华北水利水电大学校友会名誉会长、北京校友会会长陈自强的倡导下，为感恩母校的教育培养，弘扬母校“情系水利，自强不息”的办学精神，由华水北京校友会和王玉青、陆挺宇、杨文泽、王浩、陈哲、罗新伟等自然人校友共同发起成立，充分体现了校友心系母校、支持母校发展的赤子情怀。</p>
-<div style="text-align: center"><img src="周年7.png"></div>
-<p>会后，与会领导共同参观了华北水利水电大学校史馆。该校校史馆以实物、图片、文字、影像等展示学校历史与成就。“序厅”“长河流韵 七秩风华”“立德树人 培根铸魂”“博学笃行 争创一流”“经世致用 知行合一”“柔中蓄力 再赴征程”六个专题展区，深刻地呈现了华水的美好过往，再现了华北水利水电大学70年的风雨沧桑。面对华北水利水电大学所取得的一系列成就，参观领导、校友纷纷表示高度赞赏。</p>
-<p>华北水利水电大学70周年校庆以“回顾历程、凝心聚力、与时偕行、再创辉煌”为主题，校庆期间将举行黄河生态保护与文化发展论坛暨华北水利水电大学建校70周年发展座谈会开幕式、“一带一路”水利水电产学研战略联盟年会暨黄河流域高质量发展论坛、黄河流域生态保护和高质量发展河长国际学术论坛等系列主题活动，七大流域机构、中央龙头企业、合作共建单位、行业学术大咖、各地校友代表、兄弟友好院校共襄嘉会，共话情谊，共谋发展。</p>
+<div id="qwe" >
+  <nav>
+  <ul>
+                    <li><a href="历史.html"> 华水历史</a></li>
+                    <li><a href="事迹.html">华水突出事迹</a></li>
+                    <li><a href="华水70.html">华水70周年校庆</a> </li>
+  </ul>
+  </nav>
+</div>
+<p><img  alt="华水" src="0.jpg" width="99%"></p>
+<div id="ad">
+  <a href="https://70.ncwu.edu.cn/">访问华水官网</a></br>
+  <a href="https://weibo.com/hbslsdxy?refer_flag=1001030103_">关注华水微博</a></br>
+  <a href="https://www.zhihu.com/org/hua-bei-shui-li-shui-dian-da-xue-26">华水知乎官网</a></br>
+  <a href="https://www.toutiao.com/c/user/token/MS4wLjABAAAASuV9__PD2WPWouyWkEcMlz524QtOu_qUAgre3E9tfKI/?#mid=6543248099">华水今日头条主页</a><br>
+  <a href="https://space.bilibili.com/483009505">华水哔哩哔哩主页</a>
+</div>
+<div id="max" style="float: left">
+        <div class="re">
+            <ul>
+                <li><img src="主页1.jpg" alt=""></li>
+                <li><img src="W020171030636971089901.jpg" alt=""></li>
+                <li><img src="主页2.png" alt=""></li>
+                <li><img src="主页3.png" alt=""></li>
+              <li><img src="主页4.jpg" alt=""></li>
+            </ul>
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </div>
+    </div>
+<div id="hey" >
+<ul>
+  <li><a href="https://www.toutiao.com/i6971969117771268640/?wid=1639637822077"> 数”说华水，带你看不一样的华水</a></li>
+  <li><a href="http://v.ncwu.edu.cn/">华水视讯</a> </li>
+  <li><a href="https://70.ncwu.edu.cn/channels/29.html">华水校友</a></li>
+  <li><a href="https://70.ncwu.edu.cn/channels/25.html">校庆动态</a> </li>
+  <li><a href="https://70.ncwu.edu.cn/channels/26.html">校庆通知</a> </li>
+  <li><a href="https://70.ncwu.edu.cn/channels/28.html">校庆标识</a> </li>
+  <li><a href="https://news.ncwu.edu.cn/info/1013/11661.htm">华北水利水电大学庆祝70华诞 回顾历程 再创辉煌</a> </li>
+</ul>
+</div>
+<form action="#" method="post"style="clear: both">
+        <p>学号：<input type="text" name="pwd"></p>
+        <p>
+            <input type="submit" value="提交"/>
+            <input type="reset" value="重填"/>
+        </p>
+    </form></div>
+<div style="background-color: pink;text-align: center">
+  <img src="底部.png">
+</div>
 </body>
 </html>
